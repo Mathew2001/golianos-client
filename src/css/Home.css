@@ -1,0 +1,54 @@
+/* default (mobile) */
+.hero-card {
+  height: 25vh !important;
+}
+
+.home-our-services-img {
+  height: 25vh !important;
+}
+
+.home-contact-btn {
+  width: 100px !important;
+  height: 30px !important;
+  font-size: 1rem !important;
+}
+
+.contact{
+  background-color: #0184f9 !important;
+}
+/* md and up (>= 768px) */
+@media (min-width: 576px) {
+  .hero-card {
+    height: 30vh !important;
+  }
+  .home-our-services-img {
+    height: 30vh !important;
+  }
+  .hero-img {
+    object-position: center 10% !important;
+  }
+  .home-contact-btn {
+    width: 150px !important;
+    height: 50px !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 1140px) {
+  .hero-card {
+    height: 80vh !important;
+  }
+  .home-our-services-img {
+    height: 60vh !important;
+  }
+  .hero-img {
+    object-position: center 10% !important;
+  }
+  .hero-text-title {
+    font-size: 3rem !important;
+  }
+  .hero-text-p {
+    font-size: 1.5rem !important;
+  }
+}
+

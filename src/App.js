@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/layouts/Layout";
 
-function App() {
+import Page from "./components/Page";
+import ContactUsPage from "./components/pages/ContactUsPage";
+import TermsAndConditions from "./components/legal/TermsAndConditions";
+import PrivacyPolicy from "./components/legal/PrivacyPolicy";
+import ScrollToHash from "./components/ScrollToHash";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToHash />
+      <Routes>
+        {/* Public client layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Page />} />
+          <Route path="/:slug" element={<Page />} />
+          <Route path="/contact" element={<ContactUsPage />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

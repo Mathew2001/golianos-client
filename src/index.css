@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Responsive image for screens smaller than md (768px) */
+@media (max-width: 767.98px) {
+  .home-hero-image {
+    height: 60vh !important;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
