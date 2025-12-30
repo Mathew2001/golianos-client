@@ -8,7 +8,7 @@ import PrivacyPolicy from "./components/legal/PrivacyPolicy";
 import ScrollToHash from "./components/ScrollToHash";
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/golianos-client">
       <ScrollToHash />
       <Routes>
         {/* Public client layout */}
