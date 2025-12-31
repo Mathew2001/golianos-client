@@ -41,7 +41,7 @@ const Home = () => {
             <p className="card-text text-white fw-bold hero-text-p">
               {section1.data.text}
             </p>
-           <ContactButton />
+            <NavLinkButton text="צור קשר" to="/contact" className="btn btn-primary d-flex justify-content-center align-items-center home-contact-btn" />
           </div>
         </div>
       </div>
