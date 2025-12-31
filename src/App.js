@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layouts/Layout";
 
 import Page from "./components/Page";
@@ -8,7 +8,7 @@ import PrivacyPolicy from "./components/legal/PrivacyPolicy";
 import ScrollToHash from "./components/ScrollToHash";
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToHash />
       <Routes>
         {/* Public client layout */}
@@ -20,6 +20,6 @@ export default function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
