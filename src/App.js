@@ -12,7 +12,7 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         {/* Public client layout */}
-        <Route path="/golianos-client" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Page />} />
           <Route path="/:slug" element={<Page />} />
           <Route path="/contact" element={<ContactUsPage />} />
