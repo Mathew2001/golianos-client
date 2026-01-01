@@ -5,11 +5,10 @@ import Page from "./components/Page";
 import ContactUsPage from "./components/pages/ContactUsPage";
 import TermsAndConditions from "./components/legal/TermsAndConditions";
 import PrivacyPolicy from "./components/legal/PrivacyPolicy";
-import ScrollToHash from "./components/ScrollToHash";
+
 export default function App() {
   return (
     <HashRouter>
-      <ScrollToHash />
       <Routes>
         {/* Public client layout */}
         <Route path="/" element={<Layout />}>
