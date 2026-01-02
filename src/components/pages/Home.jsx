@@ -5,6 +5,7 @@ import SwiperItems from "../SwiperItems";
 import ContactUs from "../ContactUs";
 import ReviewSection from "../reviews/ReviewSection";
 import Reviews from "../reviews/Reviews";
+import { Link } from "react-router-dom";
 const Home = () => {
   const { pagesByBusinessId = [] } = useSelector((s) => s.pageReducer || {});
 
@@ -41,7 +42,7 @@ const Home = () => {
             <p className="card-text text-white fw-bold hero-text-p">
               {section1.data.text}
             </p>
-            <a href="contact" className="btn btn-primary d-flex justify-content-center align-items-center home-contact-btn">צור קשר</a>
+            <Link to="contact" className="btn btn-primary d-flex justify-content-center align-items-center home-contact-btn">צור קשר</Link>
           </div>
         </div>
       </div>
@@ -103,7 +104,7 @@ const Home = () => {
           <div className="col-12 col-md-6">
             <h2 className="fw-bold mb-4 text-black">{section2.title}</h2>
             <p className="text-muted">{section2.data.text}</p>
-            <a href="about" className="btn btn-primary">למידע נוסף</a>
+            <Link to="about" className="btn btn-primary">למידע נוסף</Link>
           </div>
           <div className="col-12 col-md-6 p-3">
             <img src={section2.data.image?.image} alt={section2.title} className="img-fluid rounded-4 home-about-img" />
