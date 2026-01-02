@@ -41,7 +41,7 @@ const Home = () => {
             <p className="card-text text-white fw-bold hero-text-p">
               {section1.data.text}
             </p>
-            <a href="/contact" className="btn btn-primary d-flex justify-content-center align-items-center home-contact-btn">צור קשר</a>
+            <a href="contact" className="btn btn-primary d-flex justify-content-center align-items-center home-contact-btn">צור קשר</a>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ const Home = () => {
           <div className="col-12 col-md-6">
             <h2 className="fw-bold mb-4 text-black">{section2.title}</h2>
             <p className="text-muted">{section2.data.text}</p>
-            <a href="/about" className="btn btn-primary">למידע נוסף</a>
+            <a href="about" className="btn btn-primary">למידע נוסף</a>
           </div>
           <div className="col-12 col-md-6 p-3">
             <img src={section2.data.image?.image} alt={section2.title} className="img-fluid rounded-4 home-about-img" />

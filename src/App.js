@@ -13,10 +13,10 @@ export default function App() {
         {/* Public client layout */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Page />} />
-          <Route path="/:slug" element={<Page />} />
-          <Route path="/contact" element={<ContactUsPage />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path=":slug" element={<Page />} />
+          <Route path="contact" element={<ContactUsPage />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </HashRouter>
